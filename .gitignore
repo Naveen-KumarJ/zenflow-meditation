@@ -1,5 +1,5 @@
 # Ignore API keys and sensitive config files
-# src/js/config.js
+src/js/config.js
 
 # Ignore node_modules
 node_modules/
