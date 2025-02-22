@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenFlow</title>
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 p-4 h-screen flex flex-col">
+
+  <h1 class="text-3xl font-bold text-center sm:text-left">ZenFlow</h1>
+
+  <div class="relative container mx-auto max-h-[75vh] bg-black mt-6 rounded-2xl p-2  flex flex-col gap-1.5 flex-grow w-full max-w-4xl">
+    <div id="context-container" class="bg-slate-50 overflow-auto flex-grow p-4 sm:pb-8 rounded-md flex flex-col">
+      <!-- <div class="question self-start mb-5 bg-black text-white px-5 font-semibold py-1.5 rounded-md w-fit">What is meant by Meditation?</div> -->
+      <!-- <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">Meditation is the practice of focusing the mind to achieve a state of calm and clarity.</div> -->
+      <!-- <div class="question self-start mb-5 bg-black text-white px-5 font-semibold py-1.5 rounded-md w-fit">What are the benefits of meditation?</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div>
+      <div class="answer self-end mb-5 bg-blue-500 text-white px-5 font-semibold py-1.5 rounded-md w-fit">It helps reduce stress, improves concentration, and enhances emotional well-being.</div> -->
+    </div>
+    <div id="input-box-container" class="flex items-center bg-slate-200 rounded-md shadow-md p-2 w-full">
+      <i class="ri-speak-ai-fill text-gray-600 text-2xl px-2"></i>
+      <input type="text" class="flex-grow p-2 bg-transparent outline-none placeholder:text-sm w-full min-w-0" placeholder="Ask Hope - Queries Related to Meditation">
+      <button id="send-btn" class="bg-blue-600 px-4 py-2 rounded-md ml-2 flex-shrink-0">
+        <i class="ri-send-plane-2-fill text-white text-lg"></i>
+      </button>
+    </div>    
+  </div>
+
+  <script src="./js/config.js"></script>
+  <script type="module" src="./js/hope.js"></script>
+</body>
+</html>

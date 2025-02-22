@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 p-4">
+  <h1 class="text-2xl font-bold text-center sm:text-left">ZenFlow</h1>
+  
+  <div id="video-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 place-items-center mt-3"></div>
+
+  <div id="video-player" class="fixed inset-0 bg-black bg-opacity-80 z-50 justify-center items-center hidden">
+    <video id="my-video" class="w-full max-w-3xl sm:max-w-4xl lg:max-w-5xl object-contain" autoplay loop playsinline>
+      <source src="" type="video/mp4" />
+    </video>
+    <i id="close-btn" class="ri-close-line text-xl md:text-4xl font-bold text-white absolute top-4 right-4 cursor-pointer"></i>
+  </div>
+  <script src="./js/scenes.js"></script>
+</body>
+</html>

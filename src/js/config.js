@@ -1,0 +1,2 @@
+export const MUSIC_API_KEY = "g3VBlSnEO2kTh76f3ChOfNnorGEZGDaJVAKdeQaC";
+export const GEMINI_API_KEY = "AIzaSyAmcpDIUPl1Y7oIHAAF58aSDwVXpRyBq3E";

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+  <h1 class="text-4xl sm:text-5xl font-extrabold text-center mb-6 text-gray-800">ZenFlow</h1>
+  
+  <!-- Breathing Modal (Full Screen) -->
+  <div id="breathingModal" class="fixed z-200 inset-0 flex items-center justify-center bg-black bg-opacity-90 hidden">
+    <div class="relative z-200 w-full h-full flex flex-col items-center justify-center">
+        <button id="closeModal" class="absolute top-5 right-5 text-white text-3xl cursor-pointer">✖</button>
+        <h2 class="text-white text-2xl font-bold mb-20">Deep Breathing</h2>
+        <div class="relative w-60 h-60">
+            <div id="circle" class="absolute inset-0 w-full h-full bg-blue-500 rounded-full flex items-center justify-center text-white text-lg font-bold">
+                Breathe In
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- 4-7-8 Breathing Modal (Full Screen) -->
+  <div id="fourSevenEightModal" class="fixed z-200 inset-0 flex items-center justify-center bg-black bg-opacity-90 hidden">
+    <div class="relative z-200 w-full h-full flex flex-col items-center justify-center text-center">
+        <button id="close478Modal" class="absolute top-5 right-5 text-white text-3xl cursor-pointer">✖</button>
+        <h2 class="text-white text-2xl font-bold">4-7-8 Technique</h2>
+        <div class="relative w-48 h-48 mx-auto mt-4">
+            <svg class="absolute top-0 left-0" width="100%" height="100%" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" stroke="#fff" stroke-width="5" fill="none"></circle>
+                <circle id="progress-circle" cx="50" cy="50" r="45" stroke="#14b8a6" stroke-width="5" fill="none" stroke-dasharray="283" stroke-dashoffset="283" stroke-linecap="round"></circle>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center text-lg font-semibold text-white" id="breath-text">Ready</div>
+        </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 mb-8 md:p-6 lg:p-10">
+    <div class="relative bg-[url('./assets/deep-breathing.jpg')] bg-no-repeat bg-cover bg-bottom hover:bg-gray-700 text-white h-[30vh] py-3 px-5 rounded-lg shadow-md transition duration-300">
+      <div class="overlay absolute inset-0 w-full h-full z-0 bg-black/40 backdrop-saturate-150 rounded-lg"></div>
+      <div class="relative flex flex-col md:flex-row justify-between md:items-end w-full h-full md:p-10">
+        <div class="md:self-center flex flex-col gap-2">
+          <h2 class="text-2xl font-bold">Deep Breathing</h2>
+          <p class="text-sm">Deep breathing is one of the best ways to relax and let your worries go.</p>
+          <a href="https://www.healthline.com/health/diaphragmatic-breathing#" class="text-xs underline">Read More</a>
+        </div>
+        <button id="deep-breathe-btn" class="bg-white text-black cursor-pointer font-semibold px-8 py-1 rounded-md">Begin</button>
+      </div>
+    </div>
+    <div class="relative bg-[url('./assets/technique-breathing.jpg')] bg-no-repeat bg-cover bg-center hover:bg-gray-700 text-white h-[30vh] py-3 px-5 rounded-lg shadow-md transition duration-300">
+      <div class="overlay absolute inset-0 w-full h-full z-0 bg-black/40 backdrop-saturate-150 rounded-lg"></div>
+      <div class="relative flex flex-col md:flex-row justify-between md:items-end w-full h-full md:p-10">
+        <div class="md:self-center flex flex-col gap-2">
+          <h2 class="text-2xl font-bold">4-7-8 Technique</h2>
+          <p class="text-sm">The 4-7-8 technique forces the mind and body to focus on regulating the breath.</p>
+          <a href="https://www.healthline.com/health/4-7-8-breathing" class="text-xs underline">Read More</a>
+        </div>
+        <button id="fourSevenEightBtn" class="bg-white text-black cursor-pointer font-semibold px-8 py-1 rounded-md">Begin</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/relaxBreathe.js"></script>
+</body>
+</html>

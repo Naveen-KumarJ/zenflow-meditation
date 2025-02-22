@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="relative h-screen flex justify-center items-center p-4">
+  <h1 class="text-4xl font-bold text-black absolute top-1 left-4">ZenFlow</h1>
+  <div class="container mx-auto flex flex-col md:flex-row items-center bg-[#F7F7F8] md:p-10 shadow-lg rounded-lg overflow-hidden max-w-4xl">
+    <div class="w-full md:w-1/2 p-6 flex flex-col justify-center">
+      <h2 class="text-3xl font-bold mb-2">Create An Account</h2>
+      <p class="text-sm text-gray-500 mb-4">Join us for a peaceful experience.</p>
+      <form action="" class="flex flex-col gap-4">
+        <input type="text" placeholder="Full Name" class="border-b-2 border-gray-300 focus:border-blue-500 outline-none p-2">
+        <input type="email" placeholder="Email" class="border-b-2 border-gray-300 focus:border-blue-500 outline-none p-2">
+        <input type="password" placeholder="Password" class="border-b-2 border-gray-300 focus:border-blue-500 outline-none p-2">
+        <input type="password" placeholder="Confirm Password" class="border-b-2 border-gray-300 focus:border-blue-500 outline-none p-2">
+        
+        <button id="createAccount-btn" type="submit" class="bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition cursor-pointer">Create Account</button>
+      </form>
+      
+      <p class="text-sm mt-4">Already have an account? <a href="./login.html" class="text-blue-500 hover:underline">Log In</a></p>
+    </div>
+    <div class="relative hidden md:block w-1/2">
+      <h4 class="absolute text-black top-3 left-3 font-bold bg-black/10 px-4 py-1 rounded-full backdrop-blur-lg z-10"><i class="ri-cursor-fill"></i> Meditation</h4>
+      <h4 class="absolute text-black bottom-30 right-3 font-bold bg-black/10 px-4 py-1 rounded-full backdrop-blur-lg z-10"><i class="ri-cursor-fill"></i> Peace</h4>
+      <h4 class="absolute text-black top-30 right-1 font-bold bg-black/10 px-4 py-1 rounded-full backdrop-blur-lg z-10"><i class="ri-cursor-fill"></i> Took a Right Path !</h4>
+      <h4 class="absolute text-black top-[50%] right-[50%] font-bold bg-black/10 px-4 py-1 rounded-full backdrop-blur-lg z-10"><i class="ri-cursor-fill"></i> Rest Matters</h4>
+      <img src="./assets/illustration.svg" alt="Signup Illustration" class="object-cover w-full h-full">
+    </div>
+  </div>
+
+  <script src="./js/signup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
