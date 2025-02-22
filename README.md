@@ -44,18 +44,6 @@ npm install
 npm run start
 ```
 
-## Configuration ⚙️
-1. Obtain API keys:
-   - [Google Gemini API Key](https://ai.google.dev/)
-   - [Freesound API Key](https://freesound.org/apiv2/apply/)
-
-2. Create `config.js` in `/js`:
-```javascript
-// config.js
-export const GEMINI_API_KEY = "your_gemini_key";
-export const MUSIC_API_KEY = "your_freesound_key";
-```
-
 ## Folder Structure 📂
 ```
 zenflow/
