@@ -1,5 +1,6 @@
 # Ignore API keys and sensitive config files
-src/js/config.js
+src/js/config.jsq
+
 
 # Ignore node_modules
 node_modules/
