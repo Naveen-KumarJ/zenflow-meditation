@@ -11,14 +11,14 @@ hamburgerMenu.addEventListener('click', () => {
 
 if (user) {
   authButtons.innerHTML = `<p class="text-white">Hi, <span class="font-semibold">${user.name}</span></p>
-      <button id="logout-btn" class="cursor-pointer font-semibold text-white px-4 py-1 rounded-full border border-white hover:bg-white hover:text-black transition">Logout</button>`;
+      <button class="logout-btn cursor-pointer font-semibold text-white px-4 py-1 rounded-full border border-white hover:bg-white hover:text-black transition">Logout</button>`;
     
     mobileAuthButtons.innerHTML = authButtons.innerHTML;
 
-    document.getElementById('logout-btn').addEventListener('click', () => {
+    document.querySelectorAll('.logout-btn').forEach(eachBtn=>eachBtn.addEventListener('click', () => {
       localStorage.removeItem("currentUser");
       window.location.reload();
-    });
+    }));
 } else {
   authButtons.innerHTML = `<button class="login-btn cursor-pointer font-bold px-4 py-1 bg-white text-black rounded-full">Log in</button>
                           <button class="signup-btn cursor-pointer font-bold px-4 py-1 border border-white text-white rounded-full">Sign up</button>`;
